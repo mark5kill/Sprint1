@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background-color: rgb(223, 194, 183);
+}
+
+.board-container{
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 5%;
+    border: 5px black solid;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+  }
+
+  .board td {
+    width: 40px;
+    height: 40px;
+    
+  }
+
+  .levels{
+    margin: 30px;
+    
+
+}
+
+.level {
+    
+    width: 80px;
+    height: 40px;
+    display:inline-block;
+    background-color: rgb(73, 133, 141);
+    border: 2px solid black;
+    border-radius: 10%;
+    padding-top: 5px;
+    /* display: table-cell; */
+    vertical-align: middle;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+  
