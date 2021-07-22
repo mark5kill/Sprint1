@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(223, 194, 183);
+    height: 100%;
+}
+.extra-features,
+.game-container {
+    margin: 50px auto 25px;
+    width: fit-content;
+    padding: 20px;
+}
+
+.top-panel {
+    height: 50px;
+}
+
+.top-panel > *, .extra-features>* {
+    display: inline-block;
+    border: 1px solid #000000;
+    padding: 5px;
+    height: 40px;
+    line-height: 25px;
+    position: relative;
+}
+
+.main-border {
+    border: 5px solid;
+    border-color: #e2e8ce #7c8a76 #7c8a76 #e2e8ce;
+    box-sizing: border-box;
+}
+
+.main-border-inverted {
+    border: 5px solid;
+    border-color: #7c8a76 #e2e8ce #e2e8ce #7c8a76;
+    box-sizing: border-box;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.cell:hover{
+    filter: brightness(85%);
+}
