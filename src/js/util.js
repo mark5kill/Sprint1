@@ -24,6 +24,12 @@ function renderBoard(board) {
 
     boardEl.innerHTML = strHTML
 }
+
+function renderCell(location,value) {
+    // Select the elCell and set the value
+    var elCell = document.querySelector(`.cell${location.i}-${location.j}`);
+    elCell.innerHTML = value;
+  }
 // function renderBoard(board) {
 //     var strHTML = ''
 //     for (let i = 0; i < board[0].length; i++) {
@@ -38,4 +44,22 @@ function renderBoard(board) {
 //     }
 
 //     boardEl.innerHTML = strHTML
+// }
+
+
+// if (cell.innerText==='📍' && cell.isMine === true) {
+//     gMarkedMines++
+//     console.log('Marked mines counter', gMarkedMines);
+//     checkGameWon();
+
+// function checkGameWon() {
+//     if (gMarkedMines == gLevel.MINES - gMinesClicked) {
+//         var elEmoji = document.querySelector('.game-button')
+//         elEmoji.innerText = '😎'
+//         var elH1 = document.querySelector('h1')
+//         elH1.innerText = 'GG YOU HAVE WON!'
+//         gGame.isOn = false;
+//     }
+
+
 // }

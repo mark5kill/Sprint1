@@ -12,11 +12,13 @@
 <body onload="initGame()">
     <main>
 
-        <div class="extra-features main-border">
-            <div onclick="chooseLevel(this)" class="level">Easy</div>
-            <div onclick="chooseLevel(this)" class="level">Medium</div>
-            <div onclick="chooseLevel(this)" class="level">Hard</div>
+        <div class="levels main-border">
+            <div onclick="chooseLevel(this)" class="easy-level">Easy</div>
+            <div onclick="chooseLevel(this)" class="medium-level">Medium</div>
+            <div onclick="chooseLevel(this)" class="hard-level">Hard</div>
         </div>
+        <h2 class="score">SCORE:<span>0</span></h2>
+       
         <h1>Lives Left!</h1>
         <div class="lives-left">💙💙💙</div>
 
@@ -24,7 +26,7 @@
             <!-- top panel -->
             <div class="top-panel">
                 <div class="flagged-mines-count main-border-inverted">99</div>
-                <div class="game-button main-border">🙂</div>
+                <div onclick="restartGame(this)" class="game-button main-border">🙂</div>
                 <div class="timer main-border-inverted">000</div>
             </div>
             <!-- board -->
